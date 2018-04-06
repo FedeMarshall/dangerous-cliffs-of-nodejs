@@ -66,7 +66,7 @@ var server = http.createServer(function(req, res) {
 });
 
 server.on('connection', function(socket) {
-  if (_.contains(sockets, socket)) {
+  if (_.includes(sockets, socket)) {
     return;
   }
 
